@@ -1,2 +1,0 @@
-# AleksaHrevtsova-Beta
-teens project

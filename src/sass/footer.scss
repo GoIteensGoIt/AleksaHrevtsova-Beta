@@ -1,0 +1,26 @@
+.container {
+  width: 292px;
+  margin: 0 auto;
+}
+
+.footer {
+  z-index: 3;
+}
+
+// ТУТ ПРОПИСЫВАЕТ СТИЛИ ПОД MOBILE
+
+@media (min-width: 768px) {
+  .container {
+    width: 708px;
+  }
+
+  // ТУТ ПРОПИСЫВАЕТ СТИЛИ ПОД TABLET
+}
+
+@media (min-width: 1199px) {
+  .container {
+    width: 1120px;
+  }
+
+  // ТУТ ПРОПИСЫВАЕТ СТИЛИ ПОД DESKTOP
+}

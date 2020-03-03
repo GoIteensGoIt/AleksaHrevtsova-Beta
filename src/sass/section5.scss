@@ -1,0 +1,115 @@
+.section5 {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 75px 0;
+}
+
+.s5_title {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  margin: 50px 0;
+}
+
+.slider__wrapper {
+  display: flex;
+  transition: transform 0.6s ease;
+  list-style: none;
+}
+
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.s5_item {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.s5_item img,
+.s5_item h3,
+.s5_item p {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.s5_item p {
+  height: 150px;
+}
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  height: 50px;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.slider__control_show {
+  display: flex;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+.slider__control_left {
+  left: 0;
+}
+
+.slider__control_right {
+  right: 0;
+}
+
+.slider__control::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_right::before {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.slider__item>div {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .s5_item p {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1199px) {
+  .s5_item p {
+    width: 700px;
+  }
+}

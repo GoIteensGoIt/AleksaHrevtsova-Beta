@@ -1,0 +1,363 @@
+.section6_wrapper {
+  background: rgb(243, 34, 132);
+}
+
+.section6 {
+  padding: 50px 0;
+}
+
+.section6,
+.rightside,
+.LeftSide {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+// .LeftSide {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   margin-top: -29%;
+//   // Не знал тут, как по-другому можно
+// }
+// Section title
+#ConUs {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  overflow: hidden;
+  margin-top: 40px;
+  position: relative;
+}
+
+#ConUs:before,
+#ConUs:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 60px;
+  height: 1px;
+  background-color: white;
+  border: solid rgb(243, 34, 132);
+  border-width: 0 10px;
+  position: absolute;
+  top: 45%;
+}
+
+#ConUs:before {
+  left: 9%;
+}
+
+#ConUs:after {
+  right: 9%;
+}
+
+// RIGHTSIDE
+.s6_form {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  // margin-top: 12px;
+}
+
+// .s6_input:first-child {
+//   margin-bottom: 25px;
+// }
+
+.s6_input {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16pt;
+  border-radius: 4px;
+  border: none;
+  width: 270px;
+  margin: 11px auto;
+}
+
+.s6_ta {
+  margin: 28px auto;
+  width: 270px;
+  border-radius: 10px;
+  // margin-left: 10px;
+}
+
+.s6_btn {
+  display: block;
+  margin: 45px auto;
+  height: 50px;
+  width: 170px;
+  background-color: orange;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+// LEFTSIDE
+.Touch {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+#s6_top {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin-top: 0;
+  color: white;
+}
+
+#s6_low {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15pt;
+  text-align: center;
+  color: #979797;
+  margin-bottom: 42px;
+}
+
+.s6_photos {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20%;
+  margin-bottom: 40px;
+  // Оно ломало всё тут из-за таблета, поэтому пришлось его менять медиаправилом
+}
+
+// .s6_photos {
+//   margin: 0;
+//   justify-content: flex-start;
+//   display: flex;
+// }
+// свойства и значения одинаковы, можно селекторы через "," прописать или
+// вообще всем трем один селектор надо было дать.
+.s6_img1,
+.s6_img2,
+.s6_img3 {
+  width: 42px;
+  height: 42px;
+  background: #3b5997;
+  border-radius: 25%;
+  position: relative;
+  margin: 10px;
+}
+
+.s6_img1 img,
+.s6_img2 img,
+.s6_img3 img {
+  position: absolute;
+  bottom: 14%;
+  left: 10%;
+}
+
+.s6_NumberEmail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#Contacts {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color: #bface2;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #ConUs:before {
+    left: 32%;
+  }
+
+  #ConUs:after {
+    right: 32%;
+  }
+
+  .s6_form {
+    display: flex;
+    flex-flow: row wrap;
+    width: 510px;
+    margin: 0 auto;
+    // height: 100px;
+  }
+
+  .s6_input {
+    width: 250px;
+    height: 40px;
+    // margin-right: 10px;
+    // display: inline-block;
+    border: 1px solid black;
+  }
+
+  // .s6_form input:first-child {
+  // margin-bottom: 20px;
+  // }
+
+  .s6_ta {
+    width: 510px;
+    // height: 500px;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+  // .s6_btn {
+  //   display: block;
+  //   margin: 45px auto;
+  //   height: 50px;
+  //   width: 170px;
+  //   background-color: orange;
+  //   border: none;
+  //   border-radius: 25px;
+  //   cursor: pointer;
+  // }
+
+  .s6_photos {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    // margin-bottom: 40px;
+  }
+
+  .s6_img1 img,
+  .s6_img2 img,
+  .s6_img3 img {
+    left: 6%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #ConUs:before {
+    left: 39%;
+  }
+
+  #ConUs:after {
+    right: 39%;
+  }
+
+
+  .rightside,
+  .LeftSide {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 550px;
+  }
+
+  .s6_form-wrapper {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-around;
+  }
+
+  // .s6_form {
+  //   display: flex;
+  //   flex-flow: wrap;
+  //   justify-content: flex-end;
+  // }
+
+  // .s6_input:first-child {
+  //   margin: 0;
+  //   margin-right: 18px;
+  // }
+
+  // .s6_btn {
+  // display: flex;
+  // justify-content: flex-end;
+  //   display: block;
+  //   margin: 30px 950px 0;
+  //   height: 50px;
+  //   width: 170px;
+  //   background-color: orange;
+  //   border: none;
+  //   border-radius: 25px;
+  //   cursor: pointer;
+  // }
+
+  // .s6_input {
+  //   height: 43px;
+  //   width: 270px;
+  //   margin-bottom: 30px;
+  // }
+
+  // .s6_ta {
+  //   width: 570px;
+  //   height: 178px;
+  //   border-radius: 10px;
+  // }
+
+  // .section6 {
+  //   padding-bottom: 125px;
+  // }
+
+  // #ConUs {
+  //   margin-bottom: 40px;
+  // }
+
+  // #Contacts {
+  //   text-align: left;
+  // }
+
+  // #s6_top {
+  //   text-align: left;
+  // }
+
+  // #s6_low {
+  //   text-align: left;
+  // }
+}
+
+// #line {
+//   background-color: grey;
+//   width: 100%;
+// }
+
+// #Template {
+//   color: grey;
+//   font-family: 'Open Sans', sans-serif;
+//   font-size: 14pt;
+//   width: 178px;
+// }
+
+// #submit {
+//   font-size: 22pt;
+//   background-color: #31d4e7;
+//   color: white;
+//   text-align: center;
+//   text-transform: uppercase;
+//   width: 15%;
+//   height: 15%;
+// }
+
+// #s6_photo1 {
+//   margin-top: 11px;
+//   margin-left: 16px;
+// }
+
+// #s6_photo2 {
+//   margin-top: 13px;
+//   margin-left: 12px;
+// }
+
+// #s6_photo3 {
+//   margin-top: 10px;
+//   margin-left: 11px;
+// }
+
+// .s6_img2 {
+//   width: 42px;
+//   height: 42px;
+//   background: #3ec2f3;
+//   border-radius: 50%;
+// }
+
+
+// .s6_img3 {
+//   width: 42px;
+//   height: 42px;
+//   background: #007ab9;
+//   border-radius: 50%;
+// }
+
+// Пытался в кружёк их взять, не выходит почему-то
+
+// Оно ломало всё в таблетке, поэтому пришлось его менять медиаправилом
